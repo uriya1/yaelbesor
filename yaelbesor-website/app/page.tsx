@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Heart, MessageSquare, Home, Leaf, ArrowLeft, MapPin, Phone, Mail } from 'lucide-react'
+import { Heart, MessageSquare, Home, Leaf, ArrowLeft, MapPin, Phone, Mail, Facebook } from 'lucide-react'
 import ContactForm from '@/components/ContactForm'
+import WhatsAppButton from '@/components/WhatsAppButton'
 
 const services = [
   {
@@ -30,9 +31,16 @@ const services = [
   },
 ]
 
+// Phone number for Yael Besor
+const PHONE_NUMBER = '054-4843029'
+const PHONE_NUMBER_WHATSAPP = '972544843029'
+
 export default function HomePage() {
   return (
     <>
+      {/* WhatsApp Floating Button */}
+      <WhatsAppButton phoneNumber={PHONE_NUMBER_WHATSAPP} />
+
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center bg-gradient-to-bl from-primary-50 via-white to-sage-50">
         <div className="absolute inset-0 overflow-hidden">
@@ -53,7 +61,7 @@ export default function HomePage() {
                 <span className="block text-primary-600 mt-2">מטפלת זוגית, משקמת יחסים ומגשרת</span>
               </h1>
               
-              <p className="text-xl text-gray-600 leading-relaxed max-w-xl">
+              <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-xl">
                 עוזרת לזוגות שהתרחקו להתחבר ולתקשר מחדש, בחיים משותפים או בפרידה נכונה
               </p>
               
@@ -113,26 +121,26 @@ export default function HomePage() {
             </div>
             
             <div className="space-y-6">
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
                 אני נשואה לחבר הכי טוב שלי, אמא לארבעה וסבתא לשני נכדים מקסימים. מתגוררת בלהבים. 
                 עוזרת לזוגות שהתרחקו להתחבר ולתקשר מחדש, בחיים משותפים או בפרידה נכונה. 
                 עושה זאת <strong>בלהבים וברחובות</strong>.
               </p>
               
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
                 מאז ומתמיד ידעתי להקשיב לאנשים ואהבתי לשאול שאלות. לראות מה הצד השני חושב, 
                 האם אפשר לפרש ארוע בעוד דרכים. כשלמדתי תואר שני בייעוץ חינוכי, היה לנו קורס 
                 ב<strong>טיפול משפחתי</strong> שהיה בעיני מרתק וגרם לי להימשך לתחום והלכתי ללמוד את זה באופן מקצועי.
               </p>
               
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
                 אני מאמינה ש<strong className="text-primary-600">הזוגיות היא הבסיס עליו עומדת המשפחה.</strong> 
                 חשוב מאוד מאוד להשקיע בזוגיות וזה לא מובן מאליו. אנחנו בוחרים רק בחירה אחת 
                 ואיתה מייצרים את המשפחה הגרעינית שלנו. <strong>הבחירה הזאת היא בזוגיות</strong>, 
                 בן או בת הזוג שלנו.
               </p>
               
-              <Link href="/couple-therapy" className="inline-flex items-center gap-2 text-primary-600 font-medium hover:gap-3 transition-all">
+              <Link href="/couple-therapy" className="inline-flex items-center gap-2 text-primary-600 font-medium hover:gap-3 transition-all text-lg">
                 קראו עוד
                 <ArrowLeft className="w-4 h-4" />
               </Link>
@@ -146,7 +154,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="section-title">מה אני עושה</h2>
-            <p className="section-subtitle max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-4">
               בקליניקה אני מטפלת בנשים וגברים בהרכבים שונים, אפשר להגיע כמשפחה, עם החמות והגיס, 
               אפשר להגיע בזוג ואפשר להגיע לבד
             </p>
@@ -161,7 +169,7 @@ export default function HomePage() {
                     <service.icon className="w-8 h-8 text-primary-600 group-hover:text-white transition-colors" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-800 mb-2">{service.title}</h3>
-                  <p className="text-gray-600">{service.description}</p>
+                  <p className="text-gray-600 text-base md:text-lg">{service.description}</p>
                   <div className="mt-4 flex items-center gap-2 text-primary-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity">
                     למידע נוסף
                     <ArrowLeft className="w-4 h-4" />
@@ -190,12 +198,62 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Blog Preview Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="section-title">מהבלוג</h2>
+            <p className="text-lg md:text-xl text-gray-600 mb-4">מאמרים וטיפים על זוגיות, הורות ומשפחה</p>
+            <div className="w-24 h-1 bg-primary-500 mx-auto rounded-full" />
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <Link href="/blog/chibbuk-kipod" className="card group">
+              <div className="mb-4">
+                <span className="text-sm text-primary-600 font-medium">זוגיות</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-primary-600 transition-colors">חיבוק קיפוד</h3>
+              <p className="text-gray-600 text-base md:text-lg leading-relaxed">
+                על הקשר המורכב בין קרבה לריחוק בזוגיות, ואיך למצוא את האיזון הנכון...
+              </p>
+            </Link>
+            
+            <Link href="/blog/lo-tov-beinenu" className="card group">
+              <div className="mb-4">
+                <span className="text-sm text-primary-600 font-medium">זוגיות במשבר</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-primary-600 transition-colors">לא טוב ביננו</h3>
+              <p className="text-gray-600 text-base md:text-lg leading-relaxed">
+                מה לעשות כשמרגישים שהקשר לא עובד? סימנים למשבר ודרכים להתמודד...
+              </p>
+            </Link>
+            
+            <Link href="/blog/etgar-hatinok" className="card group">
+              <div className="mb-4">
+                <span className="text-sm text-primary-600 font-medium">הורות</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-primary-600 transition-colors">אתגר התינוק</h3>
+              <p className="text-gray-600 text-base md:text-lg leading-relaxed">
+                איך לשמור על הזוגיות אחרי לידת תינוק ולהתמודד עם האתגרים החדשים...
+              </p>
+            </Link>
+          </div>
+          
+          <div className="text-center mt-10">
+            <Link href="/blog" className="btn-secondary inline-flex items-center gap-2">
+              לכל המאמרים
+              <ArrowLeft className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-white">
+      <section id="contact" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="section-title">צרו קשר</h2>
-            <p className="section-subtitle">אשמח לשמוע מכם ולעזור לכם</p>
+            <p className="text-lg md:text-xl text-gray-600 mb-4">אשמח לשמוע מכם ולעזור לכם</p>
             <div className="w-24 h-1 bg-primary-500 mx-auto rounded-full" />
           </div>
           
@@ -204,42 +262,66 @@ export default function HomePage() {
               <div className="card">
                 <h3 className="text-xl font-bold text-gray-800 mb-6">פרטי התקשרות</h3>
                 
-                <div className="space-y-4">
+                <div className="space-y-5">
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <MapPin className="w-5 h-5 text-primary-600" />
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">כתובת</p>
-                      <p className="font-medium text-gray-800">עפרוני 5, להבים</p>
+                      <p className="font-medium text-gray-800 text-lg">עפרוני 5, להבים</p>
                     </div>
                   </div>
                   
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
-                      <Phone className="w-5 h-5 text-primary-600" />
+                  <a href={`tel:${PHONE_NUMBER}`} className="flex items-center gap-4 group hover:bg-primary-50 p-2 -m-2 rounded-xl transition-colors">
+                    <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-primary-600 transition-colors">
+                      <Phone className="w-5 h-5 text-primary-600 group-hover:text-white transition-colors" />
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">טלפון</p>
-                      <p className="font-medium text-gray-800">התקשרו לקביעת פגישה</p>
+                      <p className="font-bold text-primary-600 text-xl">{PHONE_NUMBER}</p>
+                      <p className="text-sm text-gray-500">לחצו להתקשר</p>
                     </div>
-                  </div>
+                  </a>
                   
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
-                      <Mail className="w-5 h-5 text-primary-600" />
+                  <a 
+                    href={`https://wa.me/${PHONE_NUMBER_WHATSAPP}?text=שלום יעל, אשמח לקבוע פגישה`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-4 group hover:bg-green-50 p-2 -m-2 rounded-xl transition-colors"
+                  >
+                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-green-500 transition-colors">
+                      <svg className="w-6 h-6 text-green-600 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                      </svg>
                     </div>
                     <div>
-                      <p className="text-sm text-gray-500">אימייל</p>
-                      <p className="font-medium text-gray-800">שלחו הודעה</p>
+                      <p className="text-sm text-gray-500">וואטסאפ</p>
+                      <p className="font-bold text-green-600 text-lg">שלחו הודעה בוואטסאפ</p>
+                      <p className="text-sm text-gray-500">לחצו לפתוח שיחה</p>
                     </div>
-                  </div>
+                  </a>
+                  
+                  <a 
+                    href="https://www.facebook.com/coppia.yael/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-4 group hover:bg-blue-50 p-2 -m-2 rounded-xl transition-colors"
+                  >
+                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-blue-600 transition-colors">
+                      <Facebook className="w-5 h-5 text-blue-600 group-hover:text-white transition-colors" />
+                    </div>
+                    <div>
+                      <p className="text-sm text-gray-500">פייסבוק</p>
+                      <p className="font-medium text-blue-600 text-lg">עקבו אחריי בפייסבוק</p>
+                    </div>
+                  </a>
                 </div>
               </div>
               
               <div className="card bg-gradient-to-br from-primary-50 to-sage-50">
                 <h3 className="text-xl font-bold text-gray-800 mb-4">הקליניקה</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-700 text-base md:text-lg leading-relaxed">
                   הקליניקה נמצאת בבית שלי בלהבים, הכניסה מאפשרת פרטיות למגיעים. 
                   יש שפע חניה בחינם.
                 </p>

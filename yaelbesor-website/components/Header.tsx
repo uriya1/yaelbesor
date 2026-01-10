@@ -18,6 +18,7 @@ const menuItems = [
       { label: 'תמיכה לאחר לידה שקטה', href: '/quiet-birth' },
     ]
   },
+  { label: 'בלוג', href: '/blog' },
   { label: 'שאלות נפוצות', href: '/faq' },
   { label: 'צרו קשר', href: '/#contact' },
 ]
