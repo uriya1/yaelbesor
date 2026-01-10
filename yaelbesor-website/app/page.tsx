@@ -32,8 +32,8 @@ const services = [
 ]
 
 // Phone number for Yael Besor
-const PHONE_NUMBER = '054-4843029'
-const PHONE_NUMBER_WHATSAPP = '972544843029'
+const PHONE_NUMBER = '052-2787807'
+const PHONE_NUMBER_WHATSAPP = '972522787807'
 
 export default function HomePage() {
   return (
@@ -177,6 +177,78 @@ export default function HomePage() {
                 </div>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="section-title">מה אומרים עליי</h2>
+            <p className="text-lg md:text-xl text-gray-600 mb-4">המלצות ממטופלים</p>
+            <div className="w-24 h-1 bg-primary-500 mx-auto rounded-full" />
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="card bg-white">
+              <div className="flex items-center gap-1 mb-4">
+                {[1,2,3,4,5].map((star) => (
+                  <svg key={star} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-600 text-lg leading-relaxed mb-4">
+                &ldquo;הגענו ליעל כשהקשר שלנו היה במשבר. אחרי כמה חודשים של טיפול, למדנו לתקשר מחדש 
+                ולהבין אחד את השני. יעל נתנה לנו כלים פרקטיים שאנחנו משתמשים בהם עד היום.&rdquo;
+              </p>
+              <p className="text-primary-600 font-medium">— ר׳ וד׳, באר שבע</p>
+            </div>
+            
+            <div className="card bg-white">
+              <div className="flex items-center gap-1 mb-4">
+                {[1,2,3,4,5].map((star) => (
+                  <svg key={star} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-600 text-lg leading-relaxed mb-4">
+                &ldquo;יעל עזרה לנו לעבור את הליך הגישור בצורה מכבדת ונעימה. למרות שהתגרשנו, 
+                יצאנו עם הסכם טוב והקשר בינינו כהורים נשאר חיובי. ממליצה בחום!&rdquo;
+              </p>
+              <p className="text-primary-600 font-medium">— מ׳, רחובות</p>
+            </div>
+            
+            <div className="card bg-white">
+              <div className="flex items-center gap-1 mb-4">
+                {[1,2,3,4,5].map((star) => (
+                  <svg key={star} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-600 text-lg leading-relaxed mb-4">
+                &ldquo;אחרי לידת התינוק הרגשנו שהזוגיות שלנו בסכנה. יעל עזרה לנו להבין 
+                שזה נורמלי ונתנה לנו כלים להתמודד. היום אנחנו זוג חזק יותר מתמיד.&rdquo;
+              </p>
+              <p className="text-primary-600 font-medium">— ש׳ וי׳, להבים</p>
+            </div>
+          </div>
+          
+          <div className="text-center mt-10">
+            <a 
+              href="https://www.facebook.com/coppia.yael/reviews" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-primary-600 font-medium hover:text-primary-700 transition-colors text-lg"
+            >
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+              לכל ההמלצות בפייסבוק
+            </a>
           </div>
         </div>
       </section>

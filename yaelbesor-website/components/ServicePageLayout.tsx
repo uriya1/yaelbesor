@@ -17,8 +17,8 @@ const services = [
   { icon: Leaf, title: 'תמיכה לאחר לידה שקטה', href: '/quiet-birth' },
 ]
 
-const PHONE_NUMBER = '054-4843029'
-const PHONE_NUMBER_WHATSAPP = '972544843029'
+const PHONE_NUMBER = '052-2787807'
+const PHONE_NUMBER_WHATSAPP = '972522787807'
 
 export default function ServicePageLayout({ title, subtitle, children }: ServicePageLayoutProps) {
   return (
