@@ -47,7 +47,7 @@ export default function HomePage() {
           <div className="absolute top-20 right-20 w-72 h-72 bg-primary-200/30 rounded-full blur-3xl" />
           <div className="absolute bottom-20 left-20 w-96 h-96 bg-sage-200/30 rounded-full blur-3xl" />
         </div>
-        
+
         <div className="container mx-auto px-4 py-20 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -55,16 +55,16 @@ export default function HomePage() {
                 <Heart className="w-4 h-4" />
                 טיפול זוגי בדרום ובשפלה
               </div>
-              
+
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 יעל בשור
                 <span className="block text-primary-600 mt-2">מטפלת זוגית, משקמת יחסים ומגשרת</span>
               </h1>
-              
+
               <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-xl">
                 עוזרת לזוגות שהתרחקו להתחבר ולתקשר מחדש, בחיים משותפים או בפרידה נכונה
               </p>
-              
+
               <div className="flex flex-wrap gap-4">
                 <Link href="#contact" className="btn-primary flex items-center gap-2">
                   צרו איתי קשר
@@ -75,13 +75,13 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
-            
+
             <div className="relative">
               <div className="relative w-full aspect-square max-w-lg mx-auto">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full blur-2xl opacity-20 animate-pulse" />
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                   <Image
-                    src="/images/yael-profile.jpg"
+                    src="/images/therapy.jpg"
                     alt="יעל בשור - מטפלת זוגית"
                     width={500}
                     height={500}
@@ -102,7 +102,7 @@ export default function HomePage() {
             <h2 className="section-title">נעים מאוד, אני יעל</h2>
             <div className="w-24 h-1 bg-primary-500 mx-auto rounded-full" />
           </div>
-          
+
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
@@ -119,27 +119,27 @@ export default function HomePage() {
                 <p className="text-sm">שנות ניסיון</p>
               </div>
             </div>
-            
+
             <div className="space-y-6">
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-                אני נשואה לחבר הכי טוב שלי, אמא לארבעה וסבתא לשני נכדים מקסימים. מתגוררת בלהבים. 
-                עוזרת לזוגות שהתרחקו להתחבר ולתקשר מחדש, בחיים משותפים או בפרידה נכונה. 
+                אני נשואה לחבר הכי טוב שלי, אמא לארבעה וסבתא לשני נכדים מקסימים. מתגוררת בלהבים.
+                עוזרת לזוגות שהתרחקו להתחבר ולתקשר מחדש, בחיים משותפים או בפרידה נכונה.
                 עושה זאת <strong>בלהבים וברחובות</strong>.
               </p>
-              
+
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-                מאז ומתמיד ידעתי להקשיב לאנשים ואהבתי לשאול שאלות. לראות מה הצד השני חושב, 
-                האם אפשר לפרש ארוע בעוד דרכים. כשלמדתי תואר שני בייעוץ חינוכי, היה לנו קורס 
+                מאז ומתמיד ידעתי להקשיב לאנשים ואהבתי לשאול שאלות. לראות מה הצד השני חושב,
+                האם אפשר לפרש ארוע בעוד דרכים. כשלמדתי תואר שני בייעוץ חינוכי, היה לנו קורס
                 ב<strong>טיפול משפחתי</strong> שהיה בעיני מרתק וגרם לי להימשך לתחום והלכתי ללמוד את זה באופן מקצועי.
               </p>
-              
+
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-                אני מאמינה ש<strong className="text-primary-600">הזוגיות היא הבסיס עליו עומדת המשפחה.</strong> 
-                חשוב מאוד מאוד להשקיע בזוגיות וזה לא מובן מאליו. אנחנו בוחרים רק בחירה אחת 
-                ואיתה מייצרים את המשפחה הגרעינית שלנו. <strong>הבחירה הזאת היא בזוגיות</strong>, 
+                אני מאמינה ש<strong className="text-primary-600">הזוגיות היא הבסיס עליו עומדת המשפחה.</strong>
+                חשוב מאוד מאוד להשקיע בזוגיות וזה לא מובן מאליו. אנחנו בוחרים רק בחירה אחת
+                ואיתה מייצרים את המשפחה הגרעינית שלנו. <strong>הבחירה הזאת היא בזוגיות</strong>,
                 בן או בת הזוג שלנו.
               </p>
-              
+
               <Link href="/couple-therapy" className="inline-flex items-center gap-2 text-primary-600 font-medium hover:gap-3 transition-all text-lg">
                 קראו עוד
                 <ArrowLeft className="w-4 h-4" />
@@ -155,12 +155,12 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="section-title">מה אני עושה</h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-4">
-              בקליניקה אני מטפלת בנשים וגברים בהרכבים שונים, אפשר להגיע כמשפחה, עם החמות והגיס, 
+              בקליניקה אני מטפלת בנשים וגברים בהרכבים שונים, אפשר להגיע כמשפחה, עם החמות והגיס,
               אפשר להגיע בזוג ואפשר להגיע לבד
             </p>
             <div className="w-24 h-1 bg-primary-500 mx-auto rounded-full" />
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service) => (
               <Link key={service.title} href={service.href}>
@@ -189,7 +189,7 @@ export default function HomePage() {
             <p className="text-lg md:text-xl text-gray-600 mb-4">המלצות ממטופלים</p>
             <div className="w-24 h-1 bg-primary-500 mx-auto rounded-full" />
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="card bg-white">
               <div className="flex items-center gap-1 mb-4">
@@ -200,12 +200,12 @@ export default function HomePage() {
                 ))}
               </div>
               <p className="text-gray-600 text-lg leading-relaxed mb-4">
-                &ldquo;הגענו ליעל כשהקשר שלנו היה במשבר. אחרי כמה חודשים של טיפול, למדנו לתקשר מחדש 
+                &ldquo;הגענו ליעל כשהקשר שלנו היה במשבר. אחרי כמה חודשים של טיפול, למדנו לתקשר מחדש
                 ולהבין אחד את השני. יעל נתנה לנו כלים פרקטיים שאנחנו משתמשים בהם עד היום.&rdquo;
               </p>
               <p className="text-primary-600 font-medium">— ר׳ וד׳, באר שבע</p>
             </div>
-            
+
             <div className="card bg-white">
               <div className="flex items-center gap-1 mb-4">
                 {[1,2,3,4,5].map((star) => (
@@ -215,12 +215,12 @@ export default function HomePage() {
                 ))}
               </div>
               <p className="text-gray-600 text-lg leading-relaxed mb-4">
-                &ldquo;יעל עזרה לנו לעבור את הליך הגישור בצורה מכבדת ונעימה. למרות שהתגרשנו, 
+                &ldquo;יעל עזרה לנו לעבור את הליך הגישור בצורה מכבדת ונעימה. למרות שהתגרשנו,
                 יצאנו עם הסכם טוב והקשר בינינו כהורים נשאר חיובי. ממליצה בחום!&rdquo;
               </p>
               <p className="text-primary-600 font-medium">— מ׳, רחובות</p>
             </div>
-            
+
             <div className="card bg-white">
               <div className="flex items-center gap-1 mb-4">
                 {[1,2,3,4,5].map((star) => (
@@ -230,17 +230,17 @@ export default function HomePage() {
                 ))}
               </div>
               <p className="text-gray-600 text-lg leading-relaxed mb-4">
-                &ldquo;אחרי לידת התינוק הרגשנו שהזוגיות שלנו בסכנה. יעל עזרה לנו להבין 
+                &ldquo;אחרי לידת התינוק הרגשנו שהזוגיות שלנו בסכנה. יעל עזרה לנו להבין
                 שזה נורמלי ונתנה לנו כלים להתמודד. היום אנחנו זוג חזק יותר מתמיד.&rdquo;
               </p>
               <p className="text-primary-600 font-medium">— ש׳ וי׳, להבים</p>
             </div>
           </div>
-          
+
           <div className="text-center mt-10">
-            <a 
-              href="https://www.facebook.com/coppia.yael/reviews" 
-              target="_blank" 
+            <a
+              href="https://www.facebook.com/coppia.yael/reviews"
+              target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-primary-600 font-medium hover:text-primary-700 transition-colors text-lg"
             >
@@ -259,11 +259,11 @@ export default function HomePage() {
           <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full -translate-y-1/2 translate-x-1/2" />
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-white rounded-full translate-y-1/2 -translate-x-1/2" />
         </div>
-        
+
         <div className="container mx-auto px-4 text-center relative z-10">
           <blockquote className="text-2xl md:text-3xl lg:text-4xl font-light leading-relaxed max-w-4xl mx-auto">
-            &ldquo;על זוגיות ומשפחה וגם על מערכות יחסים בכלל, צריך לעבוד ולעבוד קשה, כל הזמן. 
-            גם אם מחליטים להפרד, צריך להפרד בטוב כי גם אם מתגרשים מבן הזוג, 
+            &ldquo;על זוגיות ומשפחה וגם על מערכות יחסים בכלל, צריך לעבוד ולעבוד קשה, כל הזמן.
+            גם אם מחליטים להפרד, צריך להפרד בטוב כי גם אם מתגרשים מבן הזוג,
             <span className="font-bold block mt-4">לעולם לא נפרדים מההורה השני של הילדים</span>&rdquo;
           </blockquote>
           <p className="mt-8 text-primary-200 text-lg">— יעל בשור</p>
@@ -278,7 +278,7 @@ export default function HomePage() {
             <p className="text-lg md:text-xl text-gray-600 mb-4">מאמרים וטיפים על זוגיות, הורות ומשפחה</p>
             <div className="w-24 h-1 bg-primary-500 mx-auto rounded-full" />
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             <Link href="/blog/chibbuk-kipod" className="card group">
               <div className="mb-4">
@@ -289,7 +289,7 @@ export default function HomePage() {
                 על הקשר המורכב בין קרבה לריחוק בזוגיות, ואיך למצוא את האיזון הנכון...
               </p>
             </Link>
-            
+
             <Link href="/blog/lo-tov-beinenu" className="card group">
               <div className="mb-4">
                 <span className="text-sm text-primary-600 font-medium">זוגיות במשבר</span>
@@ -299,7 +299,7 @@ export default function HomePage() {
                 מה לעשות כשמרגישים שהקשר לא עובד? סימנים למשבר ודרכים להתמודד...
               </p>
             </Link>
-            
+
             <Link href="/blog/etgar-hatinok" className="card group">
               <div className="mb-4">
                 <span className="text-sm text-primary-600 font-medium">הורות</span>
@@ -310,7 +310,7 @@ export default function HomePage() {
               </p>
             </Link>
           </div>
-          
+
           <div className="text-center mt-10">
             <Link href="/blog" className="btn-secondary inline-flex items-center gap-2">
               לכל המאמרים
@@ -328,12 +328,12 @@ export default function HomePage() {
             <p className="text-lg md:text-xl text-gray-600 mb-4">אשמח לשמוע מכם ולעזור לכם</p>
             <div className="w-24 h-1 bg-primary-500 mx-auto rounded-full" />
           </div>
-          
+
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="space-y-8">
               <div className="card">
                 <h3 className="text-xl font-bold text-gray-800 mb-6">פרטי התקשרות</h3>
-                
+
                 <div className="space-y-5">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
@@ -344,7 +344,7 @@ export default function HomePage() {
                       <p className="font-medium text-gray-800 text-lg">עפרוני 5, להבים</p>
                     </div>
                   </div>
-                  
+
                   <a href={`tel:${PHONE_NUMBER}`} className="flex items-center gap-4 group hover:bg-primary-50 p-2 -m-2 rounded-xl transition-colors">
                     <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-primary-600 transition-colors">
                       <Phone className="w-5 h-5 text-primary-600 group-hover:text-white transition-colors" />
@@ -355,8 +355,8 @@ export default function HomePage() {
                       <p className="text-sm text-gray-500">לחצו להתקשר</p>
                     </div>
                   </a>
-                  
-                  <a 
+
+                  <a
                     href={`https://wa.me/${PHONE_NUMBER_WHATSAPP}?text=שלום יעל, אשמח לקבוע פגישה`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -373,8 +373,8 @@ export default function HomePage() {
                       <p className="text-sm text-gray-500">לחצו לפתוח שיחה</p>
                     </div>
                   </a>
-                  
-                  <a 
+
+                  <a
                     href="https://www.facebook.com/coppia.yael/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -390,16 +390,16 @@ export default function HomePage() {
                   </a>
                 </div>
               </div>
-              
+
               <div className="card bg-gradient-to-br from-primary-50 to-sage-50">
                 <h3 className="text-xl font-bold text-gray-800 mb-4">הקליניקה</h3>
                 <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-                  הקליניקה נמצאת בבית שלי בלהבים, הכניסה מאפשרת פרטיות למגיעים. 
+                  הקליניקה נמצאת בבית שלי בלהבים, הכניסה מאפשרת פרטיות למגיעים.
                   יש שפע חניה בחינם.
                 </p>
               </div>
             </div>
-            
+
             <ContactForm />
           </div>
         </div>
